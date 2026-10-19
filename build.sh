@@ -10,6 +10,7 @@ rm -f out/TailSizeFix-mod.zip out/TailSizeFix-$V.zip
 (cd package && zip -qr ../out/TailSizeFix-mod.zip TailSizeFix)
 T=$(mktemp -d)
 cp thunderstore/manifest.json thunderstore/README.md thunderstore/CHANGELOG.md thunderstore/icon.png $T/
+cp LICENSE $T/
 mkdir -p $T/GDWeave/mods/TailSizeFix
 cp package/TailSizeFix/manifest.json package/TailSizeFix/TailSizeFix.pck $T/GDWeave/mods/TailSizeFix/
 (cd $T && zip -qr - .) > out/TailSizeFix-$V.zip

@@ -12,7 +12,7 @@ extends Node
 # Works for every player in the lobby, whether they have the mod or not, and for any size, including
 # sizes set by other mods. Nothing is sent over the network.
 
-const VERSION = "1.0.0"
+const VERSION = "1.0.1"
 const TAIL_PATH = "body/player_body/Armature/Skeleton/tail/holder/tail"
 
 
